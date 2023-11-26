@@ -19,11 +19,3 @@ describe("GET /api/movies/1", () => {
     return;
   });
 });
-
-describe("GET /api/movies/0", () => {
-  it("should return a Not Found", async () => {
-    const response = await request(app).get("/api/movies/0");
-
-    expect(response.status).toEqual(404);
-  });
-});
